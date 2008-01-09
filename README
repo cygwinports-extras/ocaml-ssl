@@ -1,0 +1,72 @@
+ocaml-ssl
+------------------------------------------
+OCaml bindings for libssl to secure connections by using 
+ssl encryption in your sockets.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  ocaml-3.10.0-1
+  openssl-0.9.8g-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://savonet.sourceforge.net/wiki/OCamlLibs
+
+Canonical download:
+  http://downloads.sourceforge.net/savonet/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-ssl-0.4.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-ssl-0.4.2-X.cygport all
+
+This will create:
+  /usr/src/ocaml-ssl-0.4.2-X-src.tar.bz2
+  /usr/src/ocaml-ssl-0.4.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/ssl/META
+  /usr/lib/ocaml/3.10/ssl/libssl_stubs.a
+  /usr/lib/ocaml/3.10/ssl/libssl_threads_stubs.a
+  /usr/lib/ocaml/3.10/ssl/ssl.a
+  /usr/lib/ocaml/3.10/ssl/ssl.cma
+  /usr/lib/ocaml/3.10/ssl/ssl.cmi
+  /usr/lib/ocaml/3.10/ssl/ssl.cmxa
+  /usr/lib/ocaml/3.10/ssl/ssl.mli
+  /usr/lib/ocaml/3.10/ssl/ssl_threads.a
+  /usr/lib/ocaml/3.10/ssl/ssl_threads.cma
+  /usr/lib/ocaml/3.10/ssl/ssl_threads.cmi
+  /usr/lib/ocaml/3.10/ssl/ssl_threads.cmxa
+  /usr/lib/ocaml/3.10/ssl/ssl_threads.mli
+  /usr/lib/ocaml/3.10/stublibs/dllssl_stubs.so
+  /usr/lib/ocaml/3.10/stublibs/dllssl_stubs.so.owner
+  /usr/lib/ocaml/3.10/stublibs/dllssl_threads_stubs.so
+  /usr/lib/ocaml/3.10/stublibs/dllssl_threads_stubs.so.owner
+  /usr/share/doc/ocaml-ssl-0.4.2/COPYING
+  /usr/share/doc/ocaml-ssl-0.4.2/Changes
+  /usr/share/doc/ocaml-ssl-0.4.2/README
+
+------------------
+
+Port Notes:
+
+----- version 0.4.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
