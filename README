@@ -4,16 +4,18 @@ OCaml bindings for libssl to secure connections by using
 ssl encryption in your sockets.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  ocaml-3.10.2-1
-  openssl-0.9.8i-1
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  ocaml-3.11.2-1
+  openssl-0.9.8l-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
-  make-3.81-1
+  binutils-2.19.51-1
+  cygport-0.9.80-1
+  flexdll-0.20-1
+  gcc-core-4.3.4-3
+  make-3.81-2
 
 Canonical website:
   http://savonet.sourceforge.net/wiki/OCamlLibs
@@ -24,50 +26,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-ssl-0.4.3-X-src.tar.bz2
+  unpack ocaml-ssl-0.4.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-ssl-0.4.3-X.cygport all
+  cygport ./ocaml-ssl-0.4.4-X.cygport all
 
 This will create:
-  /usr/src/ocaml-ssl-0.4.3-X-src.tar.bz2
-  /usr/src/ocaml-ssl-0.4.3-X.tar.bz2
+  /usr/src/ocaml-ssl-0.4.4-X-src.tar.bz2
+  /usr/src/ocaml-ssl-0.4.4-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/ocaml/3.10/ssl/META
-  /usr/lib/ocaml/3.10/ssl/libssl_stubs.a
-  /usr/lib/ocaml/3.10/ssl/libssl_threads_stubs.a
-  /usr/lib/ocaml/3.10/ssl/ssl.a
-  /usr/lib/ocaml/3.10/ssl/ssl.cma
-  /usr/lib/ocaml/3.10/ssl/ssl.cmi
-  /usr/lib/ocaml/3.10/ssl/ssl.cmxa
-  /usr/lib/ocaml/3.10/ssl/ssl.mli
-  /usr/lib/ocaml/3.10/ssl/ssl_threads.a
-  /usr/lib/ocaml/3.10/ssl/ssl_threads.cma
-  /usr/lib/ocaml/3.10/ssl/ssl_threads.cmi
-  /usr/lib/ocaml/3.10/ssl/ssl_threads.cmxa
-  /usr/lib/ocaml/3.10/ssl/ssl_threads.mli
-  /usr/lib/ocaml/3.10/stublibs/dllssl_stubs.so
-  /usr/lib/ocaml/3.10/stublibs/dllssl_stubs.so.owner
-  /usr/lib/ocaml/3.10/stublibs/dllssl_threads_stubs.so
-  /usr/lib/ocaml/3.10/stublibs/dllssl_threads_stubs.so.owner
-  /usr/share/doc/ocaml-ssl-0.4.3/COPYING
-  /usr/share/doc/ocaml-ssl-0.4.3/Changes
-  /usr/share/doc/ocaml-ssl-0.4.3/README
-
-------------------
-
 Port Notes:
 
------ version 0.4.3-1 -----
-Version bump.
-
------ version 0.4.2-1 -----
-Initial release for Cygwin.
+----- version 0.4.4-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
