@@ -1,5 +1,5 @@
 category: OCaml
-requires: libgcc1 ocaml libopenssl098 openssl-devel
+requires: ocaml libopenssl098 openssl-devel
 sdesc: "OCaml OpenSSL bindings"
 ldesc: "OCaml bindings for libssl to secure connections by using
 ssl encryption in your sockets."
