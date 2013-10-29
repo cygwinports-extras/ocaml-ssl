@@ -1,5 +1,0 @@
-category: OCaml
-requires: ocaml libopenssl100 openssl-devel
-sdesc: "OCaml OpenSSL bindings"
-ldesc: "OCaml bindings for libssl to secure connections by using
-ssl encryption in your sockets."

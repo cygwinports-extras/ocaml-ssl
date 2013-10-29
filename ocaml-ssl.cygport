@@ -1,0 +1,18 @@
+inherit ocaml
+
+NAME="ocaml-ssl"
+VERSION=0.4.6
+RELEASE=2
+CATEGORY="Libs"
+SUMMARY="OCaml OpenSSL bindings"
+DESCRIPTION="OCaml bindings for libssl to secure connections by using
+SSL encryption in your sockets."
+HOMEPAGE="http://savonet.sourceforge.net/"
+SRC_URI="mirror://sourceforge/savonet/${NAME}-${VERSION}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
