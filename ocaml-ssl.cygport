@@ -2,7 +2,7 @@ inherit ocaml
 
 NAME="ocaml-ssl"
 VERSION=0.4.6
-RELEASE=2
+RELEASE=3
 CATEGORY="Libs"
 SUMMARY="OCaml OpenSSL bindings"
 DESCRIPTION="OCaml bindings for libssl to secure connections by using
