@@ -1,14 +1,14 @@
 inherit ocaml
 
 NAME="ocaml-ssl"
-VERSION=0.4.6
-RELEASE=3
+VERSION=0.5.3
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OCaml OpenSSL bindings"
 DESCRIPTION="OCaml bindings for libssl to secure connections by using
 SSL encryption in your sockets."
-HOMEPAGE="http://savonet.sourceforge.net/"
-SRC_URI="mirror://sourceforge/savonet/${NAME}-${VERSION}.tar.gz"
+HOMEPAGE="http://liquidsoap.fm/"
+SRC_URI="https://github.com/savonet/${NAME}/releases/download/${VERSION}/${NAME}-${VERSION}.tar.gz"
 
 src_compile() {
 	lndirs
